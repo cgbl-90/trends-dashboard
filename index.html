@@ -5,63 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Trends by Alex P.</title>
+    <link rel="stylesheet" href="src/index.css">
+    <title>Trends from Social Media & News Outlets</title>
 </head>
 
 <body>
     <div class="box">
-        <h1>TRENDS</h1>
-        <span class="tabs">
-            <a href="#content-1" class="tab--style">Google search</a>
-            <a href="#content-2" class="tab--style">Google news</a>
-            <a href="#content-3" class="tab--style">Facebook</a>
-            <a href="#content-4" class="tab--style">Instagram</a>
-            <a href="#content-5" class="tab--style">Twitter</a>
-            <a href="#content-6" class="tab--style">YouTube</a>
-            <a href="#content-7" class="tab--style">TikTok</a>
-            <a href="#content-8" class="tab--style">Snapchat</a>
-            <a href="#content-9" class="tab--style">Reddit</a>
-        </span>
-        <div>
-            <div id="content-1" class="content">
-                <h3>Coming soon - data from Google search</h3>
-                <table class="table" div="table-google-trends"></table>
-            </div>
-            <div id="content-2" class="content">
-                <h3>Coming soon - data from Google news</h3>
-                <table class="table" div="table-google-news"></table>
-            </div>
-            <div id="content-3" class="content">
-                <h3>Coming soon - data from Facebook</h3>
-                <table class="table" div="table-facebook"></table>
-            </div>
-            <div id="content-4" class="content">
-                <h3>Coming soon - data from Instagram</h3>
-                <table class="table" div="table-instagram"></table>
-            </div>
-            <div id="content-5" class="content">
-                <h3>Coming soon - data from Twitter</h3>
-                <table class="table" div="table-twitter"></table>
-            </div>
-            <div id="content-6" class="content">
-                <h3>Coming soon - data from YouTube</h3>
-                <table class="table" div="table-youtube"></table>
-            </div>
-            <div id="content-7" class="content">
-                <h3>Coming soon - data from TikTok</h3>
-                <table class="table" div="table-tiktok"></table>
-            </div>
-            <div id="content-8" class="content">
-                <h3>Coming soon - data from Snapchat</h3>
-                <table class="table" div="table-snapchat"></table>
-            </div>
-            <div id="content-9" class="content">
-                <h3>Coming soon - data from Reddit</h3>
-                <table class="table" div="table-reddit"></table>
-            </div>
-        </div>
+        <section class="col">
+            <h1>FILTERS</h1>
+            <form>
+                <label for="media">CHOOSE SOURCE:</label>
+                <select name="media" id="media-list" value="google-trends">
+                    <option value="google-trends">Google Trends</option>
+                    <option value="google-news">Google News</option>
+                    <option value="instagram">Instragam</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="tiktok">Tiktok</option>
+                </select>
+                <label for="countries">COUNTRY:</label>
+                <select name="countries" id="countries-list" value="au">
+                    <option value="au">Australia</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="us">United States</option>
+                    <option value="nz">New Zealand</option>
+                </select>
+                <button id="btnSelect" class="btn">
+                    SELECT
+                </button>
+            </form>
+        </section>
+        <section class="col">
+
+        </section>
     </div>
+    <script src="src/scripts.js"></script>
 </body>
 
 </html>
