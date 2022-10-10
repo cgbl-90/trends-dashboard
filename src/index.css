@@ -34,12 +34,7 @@ select {
 
 }
 
-.box {
-    display: grid;
-    margin: 0 auto;
-    width: 90%;
-    grid-template-columns: auto 1fr;
-}
+
 
 .btn {
     align-items: center;
@@ -88,6 +83,13 @@ select {
     transform: translateY(0);
 }
 
+.box {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    grid-template-columns: auto 1fr;
+}
+
 .col {
     margin: 10px;
     height: 100vh;
@@ -95,5 +97,18 @@ select {
 
 .col:last-child {
     border-left: 1px solid grey;
+    border-radius: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    width: 100%;
+    background-color: rgb(227, 227, 227);
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 10px;
     border-radius: 0;
 }

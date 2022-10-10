@@ -3,7 +3,7 @@ function updateSelection(event) {
   event.preventDefault();
   var textSource = source.options[source.selectedIndex].text;
   var textCountry = country.options[country.selectedIndex].text;
-  console.log(textSource, textCountry);
+  console.log("textSource: ", textSource, "textCountry :", textCountry);
 }
 
 /* Listen */
